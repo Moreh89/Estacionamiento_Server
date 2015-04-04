@@ -1,5 +1,12 @@
 package modelo;
 
-public class Vehiculo {
-
+public class Vehiculo 
+{
+	String patente;
+	String color;
+	String categoria;
+	String marca;
+	String modelo;
+	
+	
 }
