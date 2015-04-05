@@ -1,5 +1,10 @@
 package modelo;
 
-public class MovimientoCC {
+import java.util.Date;
 
+public class MovimientoCC 
+{
+	Date fecha;
+	String descripcion;
+	double monto;
 }

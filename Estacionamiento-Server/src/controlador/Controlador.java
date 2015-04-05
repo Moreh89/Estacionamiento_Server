@@ -2,11 +2,13 @@ package controlador;
 
 import modelo.Cliente;
 import modelo.Tarifa;
+import modelo.Ticket;
 
 public class Controlador {
 
 	private Tarifa tarifa;
 	private Cliente cliente;
+	private Ticket ticket;
 
 	private static Controlador controlador;
 	
@@ -27,7 +29,7 @@ public class Controlador {
 
 	
 	
-	private double cobrar(int cantidadMinutos)
+	public double cobrar(int cantidadMinutos)
 	{
 		double montoCobrar=0;        
 		
@@ -42,6 +44,8 @@ public class Controlador {
 		return montoCobrar;
 	}
 
+		
+	
 	private static double cobroPorHora(double cantidadMinutos, Tarifa tarifa)
 	{
 		double montoCobrar=0;
